@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/material_dynamic_neutral40"
+    android:backgroundTint="@color/material_dynamic_neutral80"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/petImage"
+        android:layout_width="337dp"
+        android:layout_height="269dp"
+        android:src="@drawable/backg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/feedbutton"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Feed" />
+
+        <Button
+            android:id="@+id/cleanButton"
+            android:layout_width="140dp"
+            android:layout_height="58dp"
+            android:text="Clean" />
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="111dp"
+            android:layout_height="wrap_content"
+            android:text="Play" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="202dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hungerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/material_dynamic_neutral_variant30"
+            android:backgroundTint="@color/material_dynamic_neutral40"
+            android:text="Hunger: 50"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/cleanlinessStatus"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/material_dynamic_neutral30"
+            android:text="Cleanliness: 50"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/playStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/material_dynamic_neutral30"
+            android:text="Play: 50"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+</LinearLayout>
